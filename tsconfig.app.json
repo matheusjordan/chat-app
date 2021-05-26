@@ -3,7 +3,32 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./out-tsc/app",
-    "types": []
+    "types": [],
+    "paths": {
+      "crypto": [
+        "./node_modules/crypto-browserify"
+      ],
+      "stream": [
+        "./node_modules/stream-browserify"
+      ],
+      "http": [
+        "./node_modules/stream-http"
+      ],
+      "zlib": [
+        "./node_modules/browserify-zlib"
+      ],
+      "path": [
+        "./node_modules/path-browserify"
+      ],
+      "fs": [
+        "./node_modules/fs.realpath"
+      ],
+      "process": [
+        "./node_modules/process"
+      ]
+
+    }
+
   },
   "files": [
     "src/main.ts",
